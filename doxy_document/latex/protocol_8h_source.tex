@@ -1,0 +1,22 @@
+\doxysection{protocol.\+h}
+\hypertarget{protocol_8h_source}{}\label{protocol_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#include<stdio.h>}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#pragma\ pack(1)}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#define\ UINT16\ unsigned\ short\ int\ \ }}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#define\ UINT32\ unsigned\ int\ }}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#define\ UCHAR8\ unsigned\ char\ \ }}
+\DoxyCodeLine{00006\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structprot__head}{prot\_head}}}
+\DoxyCodeLine{00007\ \{}
+\DoxyCodeLine{00008\ \ \ \ \ UINT16\ version1\ :\ 4;}
+\DoxyCodeLine{00009\ \ \ \ \ UINT16\ version2\ :\ 6;}
+\DoxyCodeLine{00010\ \ \ \ \ UINT16\ version3\ :\ 6;}
+\DoxyCodeLine{00011\ \ \ \ \ UINT32\ payload\_size;}
+\DoxyCodeLine{00012\ \ \ \ \ UCHAR8\ type;}
+\DoxyCodeLine{00013\ \ \ \ \ UINT32\ ID;}
+\DoxyCodeLine{00014\ \}\mbox{\hyperlink{structprot__head}{Protocol\_head}};}
+\DoxyCodeLine{00015\ UINT32\ get\_packet\_id(\textcolor{keywordtype}{char}\ *header\_pkt);}
+\DoxyCodeLine{00016\ UINT32\ get\_payload\_length(\textcolor{keywordtype}{char}\ *header\_pkt);}
+\DoxyCodeLine{00017\ \textcolor{keywordtype}{void}\ get\_protocol\_version(\textcolor{keywordtype}{char}\ *header\_pkt,UINT16\ *ver1,UINT16\ *ver2,UINT16\ *ver3);}
+
+\end{DoxyCode}
